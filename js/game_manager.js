@@ -71,7 +71,7 @@ GameManager.prototype.move = function(direction) {
 GameManager.prototype.run = function() {
   var best = this.ai.getBest();
   this.move(best.move);
-  var timeout = (animationDelay * Math.floor(Math.random())) + 750;
+  var timeout = (animationDelay * Math.floor(Math.random())) + 500;
 
   if (this.running && !this.over && !this.won) {
     var self = this;
